@@ -1,14 +1,14 @@
 import React from "react";
 import Head from "../components/head";
 
-function TestPage() {
+function AboutPage() {
   return (
     <main>
-      <title>테스트</title>
+      <title>About Page</title>
       <Head />
-      <h1>테스트 페이지 입니다.</h1>
+      <h1>About Page</h1>
     </main>
   );
 }
 
-export default TestPage;
+export default AboutPage;
