@@ -1,7 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `My blog 2022`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `My First Jinsu's Blog`,
+    description: `진수의 개발 블로그`,
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
+    },
+    "gatsby-plugin-mdx",
+  ],
 }
