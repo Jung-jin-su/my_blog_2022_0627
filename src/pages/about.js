@@ -1,12 +1,14 @@
 import React from "react";
-import Head from "../components/head";
+import Layout from "../components/Layout";
+
 
 function AboutPage() {
   return (
     <main>
       <title>About Page</title>
-      <Head />
-      <h1>About Page</h1>
+      <Layout>
+        <h1>About Page</h1>
+      </Layout>
     </main>
   );
 }
